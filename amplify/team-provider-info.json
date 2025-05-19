@@ -16,5 +16,61 @@
         "cyberrangeportal326011f9": {}
       }
     }
+  },
+  "cyberrange": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberrangeportal-cyberrange-faf58-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-cyberrange-faf58-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-cyberrange-faf58-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cyberrangeportal-cyberrange-faf58-deployment",
+      "UnauthRoleName": "amplify-cyberrangeportal-cyberrange-faf58-unauthRole",
+      "StackName": "amplify-cyberrangeportal-cyberrange-faf58",
+      "StackId": "arn:aws:cloudformation:us-east-1:736424551703:stack/amplify-cyberrangeportal-cyberrange-faf58/5ef97ca0-34e1-11f0-a832-0afffa9210af",
+      "AmplifyAppId": "d15y06rxwvx3o5",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cyberrangeportal-cyberrange-faf58-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "cyberrangeportal326011f9": {}
+      },
+      "function": {
+        "cyberrangeportal779c11f0": {
+          "deploymentBucketName": "amplify-cyberrangeportal-cyberrange-faf58-deployment",
+          "s3Key": "amplify-builds/cyberrangeportal779c11f0-5968546f706b58506355-build.zip"
+        }
+      },
+      "api": {
+        "api3cf868ef": {}
+      }
+    }
+  },
+  "cyberback": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberrangeportal-cyberback-2eced-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-cyberback-2eced-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-cyberback-2eced-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cyberrangeportal-cyberback-2eced-deployment",
+      "UnauthRoleName": "amplify-cyberrangeportal-cyberback-2eced-unauthRole",
+      "StackName": "amplify-cyberrangeportal-cyberback-2eced",
+      "StackId": "arn:aws:cloudformation:us-east-1:736424551703:stack/amplify-cyberrangeportal-cyberback-2eced/48c34530-34e4-11f0-80bd-0e1933d4b5af",
+      "AmplifyAppId": "d2zf5r9qzj2lms",
+      "APIGatewayAuthURL": "https://s3.amazonaws.com/amplify-cyberrangeportal-cyberback-2eced-deployment/amplify-cfn-templates/api/APIGatewayAuthStack.json"
+    },
+    "categories": {
+      "auth": {
+        "cyberrangeportal326011f9": {}
+      },
+      "function": {
+        "cyberrangeportal779c11f0": {
+          "deploymentBucketName": "amplify-cyberrangeportal-cyberback-2eced-deployment",
+          "s3Key": "amplify-builds/cyberrangeportal779c11f0-5968546f706b58506355-build.zip"
+        }
+      },
+      "api": {
+        "api3cf868ef": {}
+      }
+    }
   }
 }
