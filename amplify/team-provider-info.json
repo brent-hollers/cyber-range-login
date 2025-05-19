@@ -1,0 +1,20 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-cyberrangeportal-dev-184e7-authRole",
+      "UnauthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-dev-184e7-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::736424551703:role/amplify-cyberrangeportal-dev-184e7-authRole",
+      "Region": "us-east-1",
+      "DeploymentBucketName": "amplify-cyberrangeportal-dev-184e7-deployment",
+      "UnauthRoleName": "amplify-cyberrangeportal-dev-184e7-unauthRole",
+      "StackName": "amplify-cyberrangeportal-dev-184e7",
+      "StackId": "arn:aws:cloudformation:us-east-1:736424551703:stack/amplify-cyberrangeportal-dev-184e7/2f640200-34df-11f0-8bcf-0e714e829887",
+      "AmplifyAppId": "d15y06rxwvx3o5"
+    },
+    "categories": {
+      "auth": {
+        "cyberrangeportal326011f9": {}
+      }
+    }
+  }
+}
