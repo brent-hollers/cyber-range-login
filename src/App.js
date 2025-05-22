@@ -8,14 +8,16 @@ Amplify.configure(awsExports);
 
 function App() {
   const [currentUser, setCurrentUser] = useState(null);
+  const [instanceIp, setInstanceIp] = useState('');
 
   const launchInstance = async (username) => {
     try {
       const resp = await fetch(
         `https://wt7lvmg8e3.execute-api.us-east-1.amazonaws.com/launch?username=${username}`
       );
-      const text = await resp.text();
-      console.log('EC2 launch response:', text);
+      const ip = await resp.text();
+      setInstanceIp(ip);
+      console.log('EC2 launch response:', ip);
     } catch (err) {
       console.error('Error launching instance:', err);
     }
@@ -30,14 +32,19 @@ function App() {
   return (
     <Authenticator>
       {({ signOut, user }) => {
-        // Set user only once (to trigger effect)
         if (!currentUser && user) setCurrentUser(user);
 
         return (
           <main style={{ padding: '2rem', fontFamily: 'sans-serif' }}>
             <h1>Welcome, {user.username}!</h1>
             <p>Your EC2 lab environment is launching (or resuming).</p>
-            <button onClick={signOut}>Sign out</button>
+            {instanceIp && (
+              <div style={{ marginTop: '1rem' }}>
+                <strong>Your Instance IP:</strong> {instanceIp}<br />
+                <code>ssh ubuntu@{instanceIp}</code>
+              </div>
+            )}
+            <button onClick={signOut} style={{ marginTop: '2rem' }}>Sign out</button>
           </main>
         );
       }}
